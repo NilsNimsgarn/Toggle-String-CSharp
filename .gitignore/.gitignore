@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+//using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string eingabe = Console.ReadLine();
+            string erg = "";
+            
+            for(int x = 0; x < eingabe.Length; x++)
+            {
+                string letter = eingabe.Substring(x,1);
+                          
+                if (letter == letter.ToUpper())
+                {
+                    erg += letter.ToLower();
+                }
+                else
+                {
+                    erg += letter.ToUpper();
+                }
+            }
+            Console.WriteLine(erg);
+        }
+    }
+}
